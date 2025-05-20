@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/NjabuloJ/Tox-md  /root/fanajb
-WORKDIR /root/fanajb/
+RUN git clone https://github.com/NjabuloJ/Tox-md /root/ToshTech
+WORKDIR /root/toshtech/
 
 
 COPY package.json .
@@ -21,4 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "run" , "fanajb"]
+CMD ["npm", "run" , "index.js"]
